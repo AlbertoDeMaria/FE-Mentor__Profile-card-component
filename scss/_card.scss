@@ -1,0 +1,65 @@
+.card {
+    background-color: $white;
+
+    border-radius: 1rem;
+    overflow: hidden;
+
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1); 
+
+    .bottom-card {
+        text-align: center;
+        position: relative;
+
+        .profile-img {
+            $image-size: 110px;
+            
+            margin-top: calc(-1 * $image-size / 2);
+
+            img {
+                border-radius: 100vw;
+                border: 5px solid $white;
+
+                width: $image-size;
+                height: $image-size;
+            }
+        }
+
+        .profile-information {
+            padding: 1.3rem 0;
+
+            display: grid;
+            gap: .3rem;
+        
+            h2 span {
+               margin-left: .5rem; 
+            }
+        }
+        
+        
+        .data-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            gap: 3.2rem;
+
+            padding: 1.5rem 0;
+
+            border-top: 1px solid rgba($dark_gray, .2);
+        
+            .data-box {
+                
+                h2 {
+                    line-height: 1;
+                    margin-bottom: 0.4rem;
+                }
+    
+                p {
+                    font-size: .7rem;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+    }
+}
